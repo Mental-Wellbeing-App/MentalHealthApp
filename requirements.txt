@@ -1,0 +1,9 @@
+google-generativeai
+python-dotenv
+streamlit
+streamlit-login-auth-ui
+argon2-cffi
+os
+json
+streamlit_chat
+dotenv
