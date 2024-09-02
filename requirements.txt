@@ -7,3 +7,11 @@ os
 json
 streamlit_chat
 dotenv
+plotly
+modules
+datetime 
+modules 
+sklearn
+PyPDF2
+plotly
+sentence_transformers

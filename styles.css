@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.stApp {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stHeader {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.stHeader h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.stButton {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stButton:hover {
+    background-color: #0056b3;
+}
+
+.stAlert {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.stAlert--error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.stAlert--success {
+    background-color: #d4edda;
+    color: #155724;
+}
