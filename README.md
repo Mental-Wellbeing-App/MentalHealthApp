@@ -180,3 +180,31 @@ streamlit run mainapp.py
 ```
 
 The app should automatically open in your default browser at `http://localhost:8501`.
+
+## ⚠️ Important Troubleshooting & Configuration Notes
+
+If you encounter issues (specifically with the `streamlit-login-auth-ui` library), please manually apply the following fixes to the library files or local modules:
+
+### 1. Library Fixes (`streamlit-login-auth-ui`)
+
+You may need to ctrl+click these function names in your IDE to navigate to the source files (e.g., `EncryptedCookies.py`, `__login__.py`, etc.).
+
+- **`EncryptedCookies.py`**:
+  - Locate the import for `_login_`.
+  - Change `st.cache` to **`st.cache_data`** (to support newer Streamlit versions).
+- **Imports (in `_login_` and `.utils`)**:
+  - Replace: `from trycourier import Courier`
+  - With: **`from courier.client import Courier`**
+- **`__login__.py`**:
+  - **Remove** any usage of `st.rerun_experimental()`.
+
+### 2. Configuration
+
+- **`authpage.py`**: Ensure you provide a valid `auth_token`. You can generate this token at [Courier Email API](https://www.courier.com/email-api/).
+
+### 3. Resources Folder
+
+The `resources/` folder contains essential project assets:
+
+- **Mini Project Report**: Documentation and details about the project.
+- **Sample Data**: A `.csv` file for testing the **Habit Tracker** section.
